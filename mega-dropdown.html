@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="mega-dropdown.css">
+  <script src="js/mega-dropdown.js" defer></script>
+  <title>Mega Dropdown</title>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
+    <symbol id="plus" viewBox="0 0 24 24">
+      <path fill-rule="evenodd"
+        d="M 11 2 L 11 11 L 2 11 L 2 13 L 11 13 L 11 22 L 13 22 L 13 13 L 22 13 L 22 11 L 13 11 L 13 2 Z" />
+    </symbol>
+    <symbol id="minus" viewBox="0 0 15 15">
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="black" d="M11 8H4V7H11V8Z">
+      </path>
+    </symbol>
+  </svg>
+  <section>
+    <div class="container">
+      <div class="mega-dropdown">
+        <div class="mega-dropdown_menu-wrap">
+          <div class="mega-dropdown_menu dropdown-component_wrapper">
+            <ul class="list-unstyled">
+              <li>
+                <strong id="mega-dropdown_livingRoom" class="visually-hidden">Living Room Furniture</strong>
+                <dropdown-component data-dropdown-level="1">
+                  <button type="button" class="mega-dropdown_btn dropdown-component_opener button button--link"
+                  aria-expanded="false" aria-controls="mega-dropdown1" aria-describedby="mega-dropdown_livingRoom">
+                    <strong class="mega-dropdown_title">Living Room Furniture</strong>
+                    <svg class="mega-dropdown_btn-icn icn-plus " width="15" height="12" aria-hidden="true" focusable="false">
+                      <use href="#plus"></use>
+                    </svg>
+                    <svg class="mega-dropdown_btn-icn icn-minus " width="15" height="20" aria-hidden="true" focusable="false">
+                      <use href="#minus"></use>
+                    </svg>
+                  </button>
+                  <div class="mega-dropdown_sub-menu dropdown-component_wrapper" id="mega-dropdown1">
+                    <ul class="list-unstyled">
+                      <li class="mega-dropdown_list">
+                        <a href="#" class="mega-dropdown_link">Sofas + Sectionals</a>
+                      </li>
+                      <li class="mega-dropdown_list">
+                        <a href="#" class="mega-dropdown_link">Lounge Chairs + Armchairs</a>
+                      </li>
+                      <li class="mega-dropdown_list">
+                        <a href="#" class="mega-dropdown_link">Rocking Chairs + Recliners</a>
+                      </li>
+                      <li class="mega-dropdown_list">
+                        <a href="#" class="mega-dropdown_link">Side Chairs</a>
+                      </li>
+                    </ul>
+                  </div>
+                </dropdown-component>
+              </li>
+              <li>
+                <a class="mega-dropdown_heading1" href="#">Menu heading 1</a>
+              </li>
+              <li>
+                <strong id="mega-dropdown_heading2" class="visually-hidden">Menu heading 3</strong>
+                <dropdown-component data-dropdown-level="1">
+                  <button type="button" class="mega-dropdown_btn dropdown-component_opener button button--link"
+                  aria-expanded="false" aria-controls="mega-dropdown1" aria-describedby="mega-dropdown_heading2">
+                    <strong class="mega-dropdown_title">Menu heading 3</strong>
+                    <svg class="mega-dropdown_btn-icn icn-plus " width="15" height="12" aria-hidden="true" focusable="false">
+                      <use href="#plus"></use>
+                    </svg>
+                    <svg class="mega-dropdown_btn-icn icn-minus " width="15" height="20" aria-hidden="true" focusable="false">
+                      <use href="#minus"></use>
+                    </svg>
+                  </button>
+                  <div class="mega-dropdown_sub-menu dropdown-component_wrapper" id="mega-dropdown2">
+                    <ul class="list-unstyled">
+                      <li class=" mega-dropdown_list">
+                        <a href="#" class="mega-dropdown_link">Sofas + Sectionals</a>
+                      </li>
+                      <li class="mega-dropdown_list">
+                        <a href="#" class="mega-dropdown_link">Lounge Chairs + Armchairs</a>
+                      </li>
+                      <li class="mega-dropdown_list">
+                        <a href="#" class="mega-dropdown_link">Rocking Chairs + Recliners</a>
+                      </li>
+                      <li class="mega-dropdown_list">
+                        <a href="#" class="mega-dropdown_link">Side Chairs</a>
+                      </li>
+                    </ul>
+                  </div>
+                </dropdown-component>
+              </li>
+              <li>
+                <strong id="mega-dropdown_heading3" class="visually-hidden">Menu heading 4</strong>
+                <dropdown-component data-dropdown-level="1">
+                  <button type="button" class="mega-dropdown_btn dropdown-component_opener button button--link"
+                  aria-expanded="false" aria-controls="mega-dropdown3" aria-describedby="mega-dropdown_heading3">
+                    <strong class="mega-dropdown_title">Menu heading 4</strong>
+                    <svg class="mega-dropdown_btn-icn icn-plus " width="15" height="12" aria-hidden="true" focusable="false">
+                      <use href="#plus"></use>
+                    </svg>
+                    <svg class="mega-dropdown_btn-icn icn-minus " width="15" height="20" aria-hidden="true" focusable="false">
+                      <use href="#minus"></use>
+                    </svg>
+                  </button>
+                  <div class="mega-dropdown_sub-menu dropdown-component_wrapper" id="mega-dropdown3">
+                    <ul class="list-unstyled">
+                      <li class="mega-dropdown_list">
+                        <a href="#" class="mega-dropdown_link">Sofas + Sectionals</a>
+                      </li>
+                      <li class="mega-dropdown_list">
+                        <a href="#" class="mega-dropdown_link">Lounge Chairs + Armchairs</a>
+                      </li>
+                      <li class="mega-dropdown_list">
+                        <a href="#" class="mega-dropdown_link">Rocking Chairs + Recliners</a>
+                      </li>
+                      <li class="mega-dropdown_list">
+                        <a href="#" class="mega-dropdown_link">Side Chairs</a>
+                      </li>
+                    </ul>
+                  </div>
+                </dropdown-component>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mega-dropdown_media-wrap">
+          <div class="mega-dropdown_media">
+            <img class="object-fit" src="img/image1.jpg" alt="Furniture Demo">
+          </div>
+          <div class="mega-dropdown_media">
+            <img class="object-fit" src="img/image2.jpg" alt="Tanle Demo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
